@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .header {
+            min-height: 500px;
+        }
+
+        .header .container {
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+
+        #team {
+            padding: 15px 80px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-bottom: 10px;
+        }
+
+        #super {
+            font-family: "Brush Script MT", cursive;
+            margin: 15px 0;
+            font-size: 2em;
+            color:black ;
+            text-shadow: 5px 5px 10px red;
+        }
+
+        .social {
+            font-size: 2.2em;
+            margin: 0 auto;
+        }
+
+        .social a {
+            margin: 0 15px;
+        }
+    </style>
+    <title>About Us</title>
+</head>
+
+<body>
+    <!------------------- navbar --------------->
+    <div class="navbar">
+        <div class="container">
+            <div class="nav-row">
+                <div id="logo">
+                    <a href="index.html"><img src="images/logo.png" id="logo" alt="Logo"></a>
+                </div>
+                <nav id="nav">
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="login.html">Log in</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                    <!-- <img id="cart" src="images/cart.png" alt=""> -->
+                    <img id="menu-icon" src="images/menu.png" onclick="menuToggle();" alt="">
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!---------------- header ---------------->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <h1>About Us</h1>
+                    <p>This is a simple <ins>Front-End trainnig project</ins> which was designed by the end of our
+                        course at
+                        <a href="https://www.facebook.com/people/%D8%B5%D9%81%D8%AD%D8%A9-%D9%85%D8%B5%D8%A7%D8%AF%D8%B1-%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%85-%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D9%88%D9%85/100071156545609/"
+                            target="_blank">Masader El-Taalom Center</a> , El Fayoum Governorate.<br>
+                        February 2024.
+                    </p>
+                </div>
+                <div class="col-2">
+                    <div id="team">
+                        <h2>Team Work:</h2>
+                        <ul>
+                            <li>Abd El-Rahman Mostafa</li>
+                            <li>Amira Sayed</li>
+                            <li>El-Zahraa Nasr</li>
+                            <li>Esraa Eid Abd El-Fattah</li>
+                            <li>Esraa Mahmoud</li>
+                            <li>Fatma Adel</li>
+                            <li>Hend Ayoub</li>
+                            <li>Omnia Mohsen</li>
+                            <li>Sohila Khaled</li>
+                        </ul>
+                        <h2>Under Supervision of </h2>
+                        <p id="super">Ahmed Mohamed Shahawy</p>
+                        <div class="social">
+                            <a href="https://www.facebook.com/ahmedelsayed22" target="_blank">
+                                <i class="fa fa-facebook-square" style="color: #0866ff;" aria-hidden="true"></i></a>
+                            <a href="https://www.youtube.com/@ahmed-shahawy" target="_blank">
+                                <i class="fa fa-youtube" style="color: #ff0000;" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/ahmed-mohamed-098a7b1bb/" target="_blank">
+                                <i class="fa fa-linkedin-square" style="color: #0a66c2;" aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-------------- footer ----------------->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright &copy; All Rights Are Reserved - Company Name 2023</p>
+        </div>
+    </footer>
+    <!-------------- javaScript code ---------->
+    <script>
+        var menu = document.getElementById("MenuItems");
+        menu.style.maxHeight = "0px";
+
+        function menuToggle() {
+            if (menu.style.maxHeight == "0px") {
+                menu.style.maxHeight = "200px";
+            }
+            else {
+                menu.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
